@@ -1,34 +1,65 @@
+// React
 import React from "react";
 
+// Material UI
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import {
-  AppBar,
-  Tabs,
-  Tab,
-  List,
-  ListItem,
-  ListItemText
-} from "@material-ui/core";
-import { Toolbar, IconButton, Button, Drawer } from "@material-ui/core";
+import { List, ListItem } from "@material-ui/core";
+import { Drawer } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Typography from "@material-ui/core/Typography";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-// import logo from "../assets/img/ico/logo.png";
-// import home from "../assets/img/ico/home.svg";
+// Images
+import logo from "../assets/img/ico/logo.svg";
+import facebook from "../assets/img/ico/facebook.svg";
+import instagram from "../assets/img/ico/instagram.svg";
 
-const drawerWidth = 40;
-const itemSize = 80;
+const drawerWidth = 60;
+const drawerItemWidth = drawerWidth;
+const drawerItemHeight = drawerWidth + 2; // Compensación ocular
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: "flex"
+    display: "flex",
+    width: drawerWidth
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0,
-    backgroundColor: "red"
+    height: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+    flexFlow: "column"
+  },
+  munumIcon: {
+    width: drawerItemWidth,
+    height: drawerItemHeight,
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    "&:hover": {
+      backgroundColor: "#0d133a"
+    },
+    "& img": {
+      width: "100%"
+    }
+  },
+  munumText: {
+    textAlign: "center",
+    justifyContent: "center",
+    letterSpacing: "0.235em",
+    wordWrap: "break-word",
+    lineHeight: "20px"
+  },
+  munumSocial: {
+    width: drawerItemWidth,
+    height: drawerItemHeight,
+    backgroundColor: "white",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    "& img": {
+      width: "80%"
+    }
   },
   content: {
     flexGrow: 1,
@@ -37,43 +68,45 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Sidebar(props) {
-  const { container } = props;
+export default function Sidebar() {
   const theme = useTheme();
   const classes = useStyles();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   const drawer = (
-    <div>
-      <List>
-        <ListItemIcon></ListItemIcon>
-      </List>
-      <List>
-        <ListItem>
-          <ListItemText>MUNUM</ListItemText>
+    <div className={classes.drawer}>
+      <List disablePadding>
+        <ListItem button className={classes.munumIcon}>
+          <img src={logo} alt="Logo" />
         </ListItem>
       </List>
-      <List>
-        {["Facebook", "Instagram"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon></ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+      <List disablePadding>
+        <ListItem className={classes.munumText}>
+          M<br />U<br />N<br />U<br />M<br />
+          {/* <br />2<br />0<br />2<br />0<br /> */}
+        </ListItem>
+      </List>
+      <List disablePadding>
+        <ListItem button className={classes.munumSocial}>
+          <img src={facebook} alt="Facebook" />
+        </ListItem>
+        <ListItem button className={classes.munumSocial}>
+          <img src={instagram} alt="Instagram" />
+        </ListItem>
       </List>
     </div>
   );
 
   if (matches === true) {
     return (
-      <nav>
+      <div className={classes.root}>
         <CssBaseline />
-        <Drawer className={classes.drawer} variant="permanent" anchor="left">
+        <Drawer variant="permanent" anchor="left">
           {drawer}
         </Drawer>
-      </nav>
+      </div>
     );
   } else {
-    return <div>Estas en modo responsive</div>;
+    return <div></div>;
   }
 }

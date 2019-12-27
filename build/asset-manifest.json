@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a40c6f3.chunk.css",
-    "main.js": "/static/js/main.22595e9c.chunk.js",
-    "main.js.map": "/static/js/main.22595e9c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6839dcec.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6839dcec.js.map",
-    "static/js/2.e9b9de8e.chunk.js": "/static/js/2.e9b9de8e.chunk.js",
-    "static/js/2.e9b9de8e.chunk.js.map": "/static/js/2.e9b9de8e.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ae8a229e5d40400dc1ab35cc412bc65d.js": "/precache-manifest.ae8a229e5d40400dc1ab35cc412bc65d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.2a40c6f3.chunk.css.map": "/static/css/main.2a40c6f3.chunk.css.map",
-    "static/js/2.e9b9de8e.chunk.js.LICENSE": "/static/js/2.e9b9de8e.chunk.js.LICENSE",
-    "static/media/index.css": "/static/media/LemonMilk.cef63d63.otf",
-    "static/media/campus2.jpg": "/static/media/campus2.e7aaeb37.jpg",
-    "static/media/facebook.svg": "/static/media/facebook.4aa03441.svg",
-    "static/media/instagram.svg": "/static/media/instagram.f586f23e.svg",
-    "static/media/logo.svg": "/static/media/logo.0b6dde9d.svg",
-    "static/media/onu.jpg": "/static/media/onu.34dfeed2.jpg",
-    "static/media/santiago.jpg": "/static/media/santiago.dcdf778d.jpg"
+    "main.css": "/munum-neo/static/css/main.5780b9fc.chunk.css",
+    "main.js": "/munum-neo/static/js/main.de6295ec.chunk.js",
+    "main.js.map": "/munum-neo/static/js/main.de6295ec.chunk.js.map",
+    "runtime-main.js": "/munum-neo/static/js/runtime-main.5bfb6d4e.js",
+    "runtime-main.js.map": "/munum-neo/static/js/runtime-main.5bfb6d4e.js.map",
+    "static/js/2.e4dcfeb0.chunk.js": "/munum-neo/static/js/2.e4dcfeb0.chunk.js",
+    "static/js/2.e4dcfeb0.chunk.js.map": "/munum-neo/static/js/2.e4dcfeb0.chunk.js.map",
+    "index.html": "/munum-neo/index.html",
+    "precache-manifest.10db1f534b0ae2ca7356975b333971b1.js": "/munum-neo/precache-manifest.10db1f534b0ae2ca7356975b333971b1.js",
+    "service-worker.js": "/munum-neo/service-worker.js",
+    "static/css/main.5780b9fc.chunk.css.map": "/munum-neo/static/css/main.5780b9fc.chunk.css.map",
+    "static/js/2.e4dcfeb0.chunk.js.LICENSE": "/munum-neo/static/js/2.e4dcfeb0.chunk.js.LICENSE",
+    "static/media/index.css": "/munum-neo/static/media/LemonMilk.cef63d63.otf",
+    "static/media/campus2.jpg": "/munum-neo/static/media/campus2.e7aaeb37.jpg",
+    "static/media/facebook.svg": "/munum-neo/static/media/facebook.4aa03441.svg",
+    "static/media/instagram.svg": "/munum-neo/static/media/instagram.f586f23e.svg",
+    "static/media/logo.svg": "/munum-neo/static/media/logo.0b6dde9d.svg",
+    "static/media/onu.jpg": "/munum-neo/static/media/onu.34dfeed2.jpg",
+    "static/media/santiago.jpg": "/munum-neo/static/media/santiago.dcdf778d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6839dcec.js",
-    "static/js/2.e9b9de8e.chunk.js",
-    "static/css/main.2a40c6f3.chunk.css",
-    "static/js/main.22595e9c.chunk.js"
+    "static/js/runtime-main.5bfb6d4e.js",
+    "static/js/2.e4dcfeb0.chunk.js",
+    "static/css/main.5780b9fc.chunk.css",
+    "static/js/main.de6295ec.chunk.js"
   ]
 }

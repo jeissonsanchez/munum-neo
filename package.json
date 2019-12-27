@@ -2,7 +2,7 @@
   "name": "munum",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jeissonsanchez.github.io/munum-neo",
+  "homepage": "https://jeissonsanchez.github.io/munum-neo/",
   "dependencies": {
     "@material-ui/core": "^4.8.1",
     "@material-ui/icons": "^4.5.1",

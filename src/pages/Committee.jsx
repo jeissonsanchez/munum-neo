@@ -6,9 +6,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // Components
 import Navbar from "../components/Navbar";
-import CommitteHead from "../layouts/Committee-head";
-import Munum from "../layouts/Munum";
+
+// Router
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SGAs from "../layouts/SGAs";
+import Onu from "../committees/Onu";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,17 +20,15 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Content() {
+export default function Committee() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Navbar></Navbar>
-      <div>
-        <Munum></Munum>
-        <SGAs></SGAs>
-        <CommitteHead></CommitteHead>
-      </div>
+      <Route path="/committee" exact component={SGAs} />
+      <Route path="/committee/onu" component={Onu} />
+      <Route path="/committee/hola3" component={SGAs} />
     </div>
   );
 }

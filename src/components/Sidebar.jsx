@@ -8,6 +8,9 @@ import { Drawer } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
+// Route
+import { Link } from "react-router-dom";
+
 // Images
 import logo from "../assets/img/ico/logo.svg";
 import facebook from "../assets/img/ico/facebook.svg";
@@ -76,9 +79,11 @@ export default function Sidebar() {
   const drawer = (
     <div className={classes.drawer}>
       <List disablePadding>
-        <ListItem button className={classes.munumIcon}>
-          <img src={logo} alt="Logo" />
-        </ListItem>
+        <Link to="/">
+          <ListItem button className={classes.munumIcon}>
+            <img src={logo} alt="Logo" />
+          </ListItem>
+        </Link>
       </List>
       <List disablePadding>
         <ListItem className={classes.munumText}>
@@ -87,12 +92,16 @@ export default function Sidebar() {
         </ListItem>
       </List>
       <List disablePadding>
-        <ListItem button className={classes.munumSocial}>
-          <img src={facebook} alt="Facebook" />
-        </ListItem>
-        <ListItem button className={classes.munumSocial}>
-          <img src={instagram} alt="Instagram" />
-        </ListItem>
+        <a href="https://www.facebook.com/munum.co" target="_blank">
+          <ListItem button className={classes.munumSocial}>
+            <img src={facebook} alt="Facebook" />
+          </ListItem>
+        </a>
+        <a href="https://www.instagram.com/munum.co" target="_blank">
+          <ListItem button className={classes.munumSocial}>
+            <img src={instagram} alt="Instagram" />
+          </ListItem>
+        </a>
       </List>
     </div>
   );

@@ -5,6 +5,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Container, Typography, Box, Card, CardMedia, CardContent, CardActionArea } from "@material-ui/core";
 
+// Route
+import { Link } from "react-router-dom";
+
 // Images
 import onu from "../assets/img/images/onu.jpg";
 
@@ -15,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     minHeight: "100vh",
     width: "100%",
-    margin: "70px 0"
+    padding: "70px 0"
   },
   card: {
     minWidth: 345,
@@ -40,19 +43,21 @@ export default function SGAs() {
           <Grid container alignItems="center" justify="center">
             {["Naciones Unidas", "Especializados", "Crisis", "Regionales", "Interconexión"].map(sga => (
               <Grid item sm="auto" md={4} key={sga}>
-                <Card className={classes.card}>
-                  <CardActionArea>
-                    <CardMedia className={classes.media} image={onu} title="Contemplative Reptile" />
-                    <CardContent>
-                      <Typography gutterBottom variant="h6" component="h2" align="center">
-                        {sga}
-                      </Typography>
-                      <Typography variant="body2" omponent="p" align="center">
-                        SGA
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                <Link to="/committee/onu">
+                  <Card className={classes.card}>
+                    <CardActionArea>
+                      <CardMedia className={classes.media} image={onu} title="Contemplative Reptile" />
+                      <CardContent>
+                        <Typography gutterBottom variant="h6" component="h2" align="center">
+                          {sga}
+                        </Typography>
+                        <Typography variant="body2" omponent="p" align="center">
+                          SGA
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
             ))}
           </Grid>

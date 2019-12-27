@@ -17,9 +17,10 @@ import facebook from "../assets/img/ico/facebook.svg";
 import instagram from "../assets/img/ico/instagram.svg";
 import { notEqual } from "assert";
 
+// Route
+import { Link } from "react-router-dom";
+
 const drawerWidth = 60;
-const drawerItemWidth = drawerWidth;
-const drawerItemHeight = drawerWidth + 2; // Compensación ocular
 
 const webStyles = makeStyles(theme => ({
   appBar: {
@@ -31,11 +32,10 @@ const webStyles = makeStyles(theme => ({
     justifyContent: "flex-end"
   },
   signUp: {
-    background: "rgba(255, 253, 250, 0.4) !important",
-    border: "1px solid white !important",
+    background: "rgba(251, 140, 37, 0.4) !important",
+    border: "1px solid #FB8C25 !important",
     color: "black !important",
     "&:hover": {
-      background: "rgba(255, 253, 250, 0.4)",
       color: "#4A4A4A !important",
       borderBottom: "2px solid white"
     }
@@ -55,7 +55,6 @@ const mobileStyles = makeStyles(theme => ({
 const MenuButton = styled(Button)({
   border: "1px solid transparent",
   color: "#4A4A4A",
-  borderRadius: 4,
   height: 32,
   width: 150,
   padding: "0 20px",
@@ -63,7 +62,7 @@ const MenuButton = styled(Button)({
   textTransform: "capitalize",
   "&:hover": {
     background: "rgba(255, 253, 250, 0.4)",
-    borderBottom: "2px solid white"
+    borderBottom: "2px solid #FB8C25"
   }
 });
 
@@ -77,12 +76,20 @@ export default function Navbar() {
     return (
       <AppBar className={webClasses.appBar}>
         <Toolbar className={webClasses.toolbar}>
-          <MenuButton color="primary">MUNUM'20</MenuButton>
-          <MenuButton color="primary">Comités</MenuButton>
-          <MenuButton color="primary">Costos</MenuButton>
-          <MenuButton className={webClasses.signUp} color="primary">
-            Inscribirse
-          </MenuButton>
+          <Link to="/">
+            <MenuButton color="primary">MUNUM'20</MenuButton>
+          </Link>
+          <Link to="/committee">
+            <MenuButton color="primary">Comités</MenuButton>
+          </Link>
+          <Link to="/pricing">
+            <MenuButton color="primary">Costos</MenuButton>
+          </Link>
+          <Link to="/signUp">
+            <MenuButton className={webClasses.signUp} color="primary">
+              Inscribirse
+            </MenuButton>
+          </Link>
         </Toolbar>
       </AppBar>
     );
@@ -90,10 +97,10 @@ export default function Navbar() {
     return (
       <div className={mobileClasses.nav}>
         <BottomNavigation showLabels>
-          <BottomNavigationAction label="Munum" icon={<HomeIcon />} />
-          <BottomNavigationAction label="Comités" icon={<AccountBalanceIcon />} />
-          <BottomNavigationAction label="Costos" icon={<MonetizationOnIcon />} />
-          <BottomNavigationAction label="Inscribirse" icon={<ExitToAppIcon />} />
+          <BottomNavigationAction label="Munum" icon={<HomeIcon />} component={Link} to="/" />
+          <BottomNavigationAction label="Comités" icon={<AccountBalanceIcon />} component={Link} to="/committee" />
+          <BottomNavigationAction label="Costos" icon={<MonetizationOnIcon />} component={Link} to="/pricing" />
+          <BottomNavigationAction label="Inscribirse" icon={<ExitToAppIcon />} component={Link} to="/signUp" />
         </BottomNavigation>
         {/* {webNavbar} */}
       </div>

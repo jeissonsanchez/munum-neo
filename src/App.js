@@ -1,13 +1,16 @@
 import React from "react";
 
+// Components
 import Sidebar from "./components/Sidebar";
-import Content from "./pages/Content";
 
 // Material UI
 import { makeStyles, StylesProvider, withStyles } from "@material-ui/core/styles";
 
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { Grid, Container, Typography } from "@material-ui/core";
+// Router
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Committee from "./pages/Committee";
+import Pricing from "./pages/Pricing";
 
 const useStyles = makeStyles(theme => ({
   layout: {
@@ -45,10 +48,17 @@ function App() {
       <StylesProvider>
         <GlobalCSS />
       </StylesProvider>
-      <div className={classes.layout}>
-        <Sidebar></Sidebar>
-        <Content></Content>
-      </div>
+
+      <Router>
+        <div className={classes.layout}>
+          <Sidebar></Sidebar>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/committee" component={Committee} />
+            <Route path="/pricing" component={Pricing} />
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

@@ -22,10 +22,13 @@ const GlobalCSS = withStyles({
       fontWeight: 900,
       letterSpacing: "0.235em"
     },
+    ".MuiTypography-h1, .MuiTypography-h2": {
+      fontFamily: "LemonMilk"
+    },
     ".MuiTypography-h3": {
       fontSize: "2rem",
       lineHeight: "2rem",
-      paddingBottom: "20px"
+      paddingBottom: "7px"
     },
     ".MuiTypography-body1": {
       fontSize: "0.9rem",

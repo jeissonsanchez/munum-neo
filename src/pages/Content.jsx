@@ -1,11 +1,14 @@
 // React
 import React from "react";
 
-// Layout
-import CommitteHead from "../layouts/Committee-head";
+// Material UI
 import { makeStyles } from "@material-ui/core/styles";
 
+// Components
 import Navbar from "../components/Navbar";
+import CommitteHead from "../layouts/Committee-head";
+import Munum from "../layouts/Munum";
+import SGAs from "../layouts/SGAs";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,7 +25,8 @@ export default function Content() {
     <div className={classes.root}>
       <Navbar></Navbar>
       <div>
-        <CommitteHead></CommitteHead>
+        <Munum></Munum>
+        <SGAs></SGAs>
         <CommitteHead></CommitteHead>
       </div>
     </div>

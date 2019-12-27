@@ -3,9 +3,13 @@ import React from "react";
 
 // Material UI
 import { makeStyles, useTheme, styled } from "@material-ui/core/styles";
-import { AppBar, Toolbar, Button } from "@material-ui/core";
+import { AppBar, Toolbar, Button, MenuList, MenuItem, Typography, BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import HomeIcon from "@material-ui/icons/Home";
+import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 // Images
 import logo from "../assets/img/ico/logo.svg";
@@ -17,7 +21,7 @@ const drawerWidth = 60;
 const drawerItemWidth = drawerWidth;
 const drawerItemHeight = drawerWidth + 2; // Compensación ocular
 
-const useStyles = makeStyles(theme => ({
+const webStyles = makeStyles(theme => ({
   appBar: {
     backgroundColor: "transparent",
     boxShadow: "none",
@@ -38,14 +42,24 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const mobileStyles = makeStyles(theme => ({
+  nav: {
+    width: "100%",
+    position: "fixed",
+    border: "1px solid #f5a333",
+    bottom: 0,
+    zIndex: 9999
+  }
+}));
+
 const MenuButton = styled(Button)({
   border: "1px solid transparent",
   color: "#4A4A4A",
   borderRadius: 4,
   height: 32,
-  width: 200,
-  padding: "0 10px",
-  margin: "0 5px",
+  width: 150,
+  padding: "0 20px",
+  margin: "0 10px",
   textTransform: "capitalize",
   "&:hover": {
     background: "rgba(255, 253, 250, 0.4)",
@@ -55,23 +69,34 @@ const MenuButton = styled(Button)({
 
 export default function Navbar() {
   const theme = useTheme();
-  const classes = useStyles();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const webClasses = webStyles();
+  const mobileClasses = mobileStyles();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   if (matches === true) {
     return (
-      <AppBar className={classes.appBar}>
-        <Toolbar className={classes.toolbar}>
-          <MenuButton color="primary">Quienes Somos</MenuButton>
+      <AppBar className={webClasses.appBar}>
+        <Toolbar className={webClasses.toolbar}>
+          <MenuButton color="primary">MUNUM'20</MenuButton>
           <MenuButton color="primary">Comités</MenuButton>
           <MenuButton color="primary">Costos</MenuButton>
-          <MenuButton className={classes.signUp} color="primary">
+          <MenuButton className={webClasses.signUp} color="primary">
             Inscribirse
           </MenuButton>
         </Toolbar>
       </AppBar>
     );
   } else {
-    return <div></div>;
+    return (
+      <div className={mobileClasses.nav}>
+        <BottomNavigation showLabels>
+          <BottomNavigationAction label="Munum" icon={<HomeIcon />} />
+          <BottomNavigationAction label="Comités" icon={<AccountBalanceIcon />} />
+          <BottomNavigationAction label="Costos" icon={<MonetizationOnIcon />} />
+          <BottomNavigationAction label="Inscribirse" icon={<ExitToAppIcon />} />
+        </BottomNavigation>
+        {/* {webNavbar} */}
+      </div>
+    );
   }
 }

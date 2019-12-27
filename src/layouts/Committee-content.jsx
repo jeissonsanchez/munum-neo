@@ -7,9 +7,6 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Grid, Container, Typography, Box } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-// Components
-import Scroll from "../components/Scroll";
-
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -40,6 +37,27 @@ const useStyles = makeStyles(theme => ({
       height: "100%",
       right: 0
     }
+  },
+  scroll: {
+    display: "flex",
+    flexFlow: "column nowrap",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  instruction: {
+    margin: 10,
+    lineHeight: 1.5,
+    "&>span": {
+      textTransform: "lowercase"
+    }
+  },
+  scrollDown: {
+    width: 50,
+    height: 80,
+    borderRadius: 25,
+    background: "transparent",
+    border: "2px solid black",
+    overflow: "hidden"
   }
 }));
 
@@ -66,7 +84,15 @@ export default function CommitteeHead() {
               SGA de Naciones Unidas MUNUM’20
             </Typography>
           </Box>
-          <Scroll color="black">para conocer los comités</Scroll>
+          <Box className={classes.scroll}>
+            <div className={classes.scrollDown}></div>
+            <Typography variant="overline" align="center">
+              <div className={classes.instruction}>
+                <b>Scroll </b> <br />
+                <span>para conocer los comités</span>
+              </div>
+            </Typography>
+          </Box>
         </Grid>
         <Grid item sm={12} md={8}>
           <div className={classes.headImage}>

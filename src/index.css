@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@font-face {
+  font-family: "LemonMilk";
+  font-weight: 400;
+  src: url("./assets/font/lemon_milk/LemonMilk.otf");
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;

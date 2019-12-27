@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme => ({
 export default function Sidebar() {
   const theme = useTheme();
   const classes = useStyles();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   const drawer = (
     <div className={classes.drawer}>

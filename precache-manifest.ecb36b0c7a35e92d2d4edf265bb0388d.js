@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ebfcb5b538b9f3c02d2ac71d8c619133",
+    "revision": "8a448b470bebd0f72f5308a4abe05ddf",
     "url": "/munum-neo/index.html"
   },
   {
-    "revision": "7eb0cc6f8a3b9e30d324",
+    "revision": "55a4e0fc8bd437675f0b",
     "url": "/munum-neo/static/css/main.f707d842.chunk.css"
   },
   {
-    "revision": "d8b017cad4bfa29b279a",
-    "url": "/munum-neo/static/js/2.23f518b5.chunk.js"
+    "revision": "8e19b1639663c22015ec",
+    "url": "/munum-neo/static/js/2.dbd141f4.chunk.js"
   },
   {
     "revision": "e78dfdab5c41096b24065d8ab6322e32",
-    "url": "/munum-neo/static/js/2.23f518b5.chunk.js.LICENSE"
+    "url": "/munum-neo/static/js/2.dbd141f4.chunk.js.LICENSE"
   },
   {
-    "revision": "7eb0cc6f8a3b9e30d324",
-    "url": "/munum-neo/static/js/main.0be3feba.chunk.js"
+    "revision": "55a4e0fc8bd437675f0b",
+    "url": "/munum-neo/static/js/main.813aff1f.chunk.js"
   },
   {
     "revision": "59b9004e138f56a3a97c",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/munum-neo/static/media/campus2.e7aaeb37.jpg"
   },
   {
-    "revision": "634075c1e2204854312215062998fcdd",
-    "url": "/munum-neo/static/media/diego.634075c1.jpg"
+    "revision": "5e8c09cc11f4c8db8eb41d657d7010c0",
+    "url": "/munum-neo/static/media/diego4.5e8c09cc.jpg"
   },
   {
     "revision": "4aa034417baada4d71e9a9f56d4d0cb3",

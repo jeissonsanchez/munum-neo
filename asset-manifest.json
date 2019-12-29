@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/munum-neo/static/css/main.f707d842.chunk.css",
-    "main.js": "/munum-neo/static/js/main.813aff1f.chunk.js",
-    "main.js.map": "/munum-neo/static/js/main.813aff1f.chunk.js.map",
+    "main.js": "/munum-neo/static/js/main.3887d171.chunk.js",
+    "main.js.map": "/munum-neo/static/js/main.3887d171.chunk.js.map",
     "runtime-main.js": "/munum-neo/static/js/runtime-main.5bfb6d4e.js",
     "runtime-main.js.map": "/munum-neo/static/js/runtime-main.5bfb6d4e.js.map",
     "static/js/2.dbd141f4.chunk.js": "/munum-neo/static/js/2.dbd141f4.chunk.js",
     "static/js/2.dbd141f4.chunk.js.map": "/munum-neo/static/js/2.dbd141f4.chunk.js.map",
     "index.html": "/munum-neo/index.html",
-    "precache-manifest.ecb36b0c7a35e92d2d4edf265bb0388d.js": "/munum-neo/precache-manifest.ecb36b0c7a35e92d2d4edf265bb0388d.js",
+    "precache-manifest.c99e2b0fc163680d980a04dceb950d67.js": "/munum-neo/precache-manifest.c99e2b0fc163680d980a04dceb950d67.js",
     "service-worker.js": "/munum-neo/service-worker.js",
     "static/css/main.f707d842.chunk.css.map": "/munum-neo/static/css/main.f707d842.chunk.css.map",
     "static/js/2.dbd141f4.chunk.js.LICENSE": "/munum-neo/static/js/2.dbd141f4.chunk.js.LICENSE",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.5bfb6d4e.js",
     "static/js/2.dbd141f4.chunk.js",
     "static/css/main.f707d842.chunk.css",
-    "static/js/main.813aff1f.chunk.js"
+    "static/js/main.3887d171.chunk.js"
   ]
 }

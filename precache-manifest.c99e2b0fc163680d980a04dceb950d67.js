@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a448b470bebd0f72f5308a4abe05ddf",
+    "revision": "8d9bdc454491d727071686492381deb0",
     "url": "/munum-neo/index.html"
   },
   {
-    "revision": "55a4e0fc8bd437675f0b",
+    "revision": "d4e70eac6823bff819f6",
     "url": "/munum-neo/static/css/main.f707d842.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/munum-neo/static/js/2.dbd141f4.chunk.js.LICENSE"
   },
   {
-    "revision": "55a4e0fc8bd437675f0b",
-    "url": "/munum-neo/static/js/main.813aff1f.chunk.js"
+    "revision": "d4e70eac6823bff819f6",
+    "url": "/munum-neo/static/js/main.3887d171.chunk.js"
   },
   {
     "revision": "59b9004e138f56a3a97c",

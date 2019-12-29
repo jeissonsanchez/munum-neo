@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16596c5f43cda56392314b8e643bd6cb",
+    "revision": "70c10784bb362f41eaa01b1409b0e83f",
     "url": "/munum-neo/index.html"
   },
   {
-    "revision": "a6a68914f754f8a3c80b",
-    "url": "/munum-neo/static/css/main.5780b9fc.chunk.css"
+    "revision": "bae69a4f389bb35acf59",
+    "url": "/munum-neo/static/css/main.f707d842.chunk.css"
   },
   {
-    "revision": "113d362b7ed70a29aff1",
-    "url": "/munum-neo/static/js/2.e4dcfeb0.chunk.js"
+    "revision": "2bbb56ff129c0a934b5f",
+    "url": "/munum-neo/static/js/2.f7f8f8c6.chunk.js"
   },
   {
     "revision": "e78dfdab5c41096b24065d8ab6322e32",
-    "url": "/munum-neo/static/js/2.e4dcfeb0.chunk.js.LICENSE"
+    "url": "/munum-neo/static/js/2.f7f8f8c6.chunk.js.LICENSE"
   },
   {
-    "revision": "a6a68914f754f8a3c80b",
-    "url": "/munum-neo/static/js/main.de6295ec.chunk.js"
+    "revision": "bae69a4f389bb35acf59",
+    "url": "/munum-neo/static/js/main.d2792410.chunk.js"
   },
   {
     "revision": "59b9004e138f56a3a97c",

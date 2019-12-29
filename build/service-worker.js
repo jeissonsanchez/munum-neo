@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/munum-neo/precache-manifest.10db1f534b0ae2ca7356975b333971b1.js"
+  "/munum-neo/precache-manifest.9329dae22599316b965c2fdebbbe4dd8.js"
 );
 
 self.addEventListener('message', (event) => {

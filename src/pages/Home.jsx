@@ -9,6 +9,10 @@ import Navbar from "../components/Navbar";
 import Munum from "../layouts/Munum";
 import CommitteeHead from "../layouts/Committee-head";
 
+// Image
+import diego from "../assets/img/images/diego3.jpg";
+import santiago from "../assets/img/images/santiago.jpg";
+
 const useStyles = makeStyles(theme => ({
   root: {
     overflowX: "hidden",
@@ -25,7 +29,9 @@ export default function Home() {
       <Navbar></Navbar>
       <div>
         <Munum></Munum>
-        <CommitteeHead></CommitteeHead>
+        <CommitteeHead image={diego} title="BIENVENIDOS" who="Diego Ruíz" position="Secretario General MUNUM'20">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at, nobis ratione necessitatibus excepturi quod culpa distinctio delectus iure? Libero natus nesciunt blanditiis animi provident similique quia possimus earum nisi?
+        </CommitteeHead>
       </div>
     </div>
   );

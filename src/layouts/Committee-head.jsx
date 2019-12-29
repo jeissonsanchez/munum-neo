@@ -1,6 +1,5 @@
 // React
 import React from "react";
-import santiago from "../assets/img/images/santiago.jpg";
 
 // Material UI
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -36,41 +35,51 @@ const useStyles = makeStyles(theme => ({
   headImage: {
     height: "100vh",
     width: "100%",
+    overflow: "hidden",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     "& img": {
-      height: "100%",
-      right: 0
+      width: "100%",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto"
+    }
+  },
+  "@media (max-width: 960px)": {
+    headImage: {
+      height: "100%"
     }
   }
 }));
 
-export default function CommitteeHead() {
+export default function CommitteeHead(props) {
   const theme = useTheme();
-  const classes = useStyles();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Grid container>
+      <Grid container direction="row-reverse">
         <Grid item sm={12} md={4} className={classes.committeePresentation}>
           <Box>
             <Typography variant="h3" component="h2" align="left">
-              NACIONES <br />
-              UNIDAS
+              {props.title}
             </Typography>
-            <Typography variant="body1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at, nobis ratione necessitatibus excepturi quod culpa distinctio delectus iure? Libero natus nesciunt blanditiis animi provident similique quia possimus earum nisi?</Typography>
+            <Typography variant="body1">{props.children}</Typography>
             <br />
             <Typography variant="body1" align="right" className={classes.committeeSGAName}>
-              Jeisson Fabián Sánchez Gutiérrez
+              {props.who}
             </Typography>
             <Typography variant="body1" align="right" className={classes.committeeSGAPosition}>
-              SGA de Naciones Unidas MUNUM’20
+              {props.position}
             </Typography>
           </Box>
-          <Scroll color="black">para conocer los comités</Scroll>
+          {props.scroll ? <Scroll color="black">para conocer los comités</Scroll> : null}
         </Grid>
         <Grid item sm={12} md={8}>
           <div className={classes.headImage}>
-            <img src={santiago} alt="santiago" />
+            <img src={props.image} alt={props.image} />
           </div>
         </Grid>
       </Grid>

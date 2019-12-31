@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d8e0bf3efaf230c72d6216df3ded4f4",
+    "revision": "31460586e2df081e53a369ab0ee4cc33",
     "url": "/munum-neo/index.html"
   },
   {
-    "revision": "e8b0b0f0619cf5376c0f",
+    "revision": "1c92badb6ecb4448d5ca",
     "url": "/munum-neo/static/css/main.f707d842.chunk.css"
   },
   {
-    "revision": "09a95865e63f7f1defb8",
-    "url": "/munum-neo/static/js/2.f0f9a4e9.chunk.js"
+    "revision": "49f4be45fafc59d4d6eb",
+    "url": "/munum-neo/static/js/2.4ccc459a.chunk.js"
   },
   {
     "revision": "e78dfdab5c41096b24065d8ab6322e32",
-    "url": "/munum-neo/static/js/2.f0f9a4e9.chunk.js.LICENSE"
+    "url": "/munum-neo/static/js/2.4ccc459a.chunk.js.LICENSE"
   },
   {
-    "revision": "e8b0b0f0619cf5376c0f",
-    "url": "/munum-neo/static/js/main.a50cb410.chunk.js"
+    "revision": "1c92badb6ecb4448d5ca",
+    "url": "/munum-neo/static/js/main.4d73a6af.chunk.js"
   },
   {
     "revision": "59b9004e138f56a3a97c",
@@ -48,8 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/munum-neo/static/media/logo.0b6dde9d.svg"
   },
   {
-    "revision": "34dfeed20d644ba572bd2d8d31bc8d77",
-    "url": "/munum-neo/static/media/onu.34dfeed2.jpg"
+    "revision": "e5061f8a77875375c2a920d244fdcba4",
+    "url": "/munum-neo/static/media/mario2.e5061f8a.jpg"
+  },
+  {
+    "revision": "04f6e561656c7dd0812da63d69c4f9f0",
+    "url": "/munum-neo/static/media/onu-cover.04f6e561.jpg"
   },
   {
     "revision": "dcdf778db8dbca4b5ad51cbc64c1e576",

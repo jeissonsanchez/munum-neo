@@ -1,30 +1,31 @@
 {
   "files": {
     "main.css": "/munum-neo/static/css/main.f707d842.chunk.css",
-    "main.js": "/munum-neo/static/js/main.a50cb410.chunk.js",
-    "main.js.map": "/munum-neo/static/js/main.a50cb410.chunk.js.map",
+    "main.js": "/munum-neo/static/js/main.4d73a6af.chunk.js",
+    "main.js.map": "/munum-neo/static/js/main.4d73a6af.chunk.js.map",
     "runtime-main.js": "/munum-neo/static/js/runtime-main.5bfb6d4e.js",
     "runtime-main.js.map": "/munum-neo/static/js/runtime-main.5bfb6d4e.js.map",
-    "static/js/2.f0f9a4e9.chunk.js": "/munum-neo/static/js/2.f0f9a4e9.chunk.js",
-    "static/js/2.f0f9a4e9.chunk.js.map": "/munum-neo/static/js/2.f0f9a4e9.chunk.js.map",
+    "static/js/2.4ccc459a.chunk.js": "/munum-neo/static/js/2.4ccc459a.chunk.js",
+    "static/js/2.4ccc459a.chunk.js.map": "/munum-neo/static/js/2.4ccc459a.chunk.js.map",
     "index.html": "/munum-neo/index.html",
-    "precache-manifest.84ad8b321534a719e77c53d689cb8abf.js": "/munum-neo/precache-manifest.84ad8b321534a719e77c53d689cb8abf.js",
+    "precache-manifest.0ae9d557e65400dd482f9a66d8aee731.js": "/munum-neo/precache-manifest.0ae9d557e65400dd482f9a66d8aee731.js",
     "service-worker.js": "/munum-neo/service-worker.js",
     "static/css/main.f707d842.chunk.css.map": "/munum-neo/static/css/main.f707d842.chunk.css.map",
-    "static/js/2.f0f9a4e9.chunk.js.LICENSE": "/munum-neo/static/js/2.f0f9a4e9.chunk.js.LICENSE",
+    "static/js/2.4ccc459a.chunk.js.LICENSE": "/munum-neo/static/js/2.4ccc459a.chunk.js.LICENSE",
     "static/media/index.css": "/munum-neo/static/media/LemonMilk.cef63d63.otf",
     "static/media/campus2.jpg": "/munum-neo/static/media/campus2.e7aaeb37.jpg",
     "static/media/diego4.jpg": "/munum-neo/static/media/diego4.5e8c09cc.jpg",
     "static/media/facebook.svg": "/munum-neo/static/media/facebook.4aa03441.svg",
     "static/media/instagram.svg": "/munum-neo/static/media/instagram.f586f23e.svg",
     "static/media/logo.svg": "/munum-neo/static/media/logo.0b6dde9d.svg",
-    "static/media/onu.jpg": "/munum-neo/static/media/onu.34dfeed2.jpg",
+    "static/media/mario2.jpg": "/munum-neo/static/media/mario2.e5061f8a.jpg",
+    "static/media/onu-cover.jpg": "/munum-neo/static/media/onu-cover.04f6e561.jpg",
     "static/media/santiago.jpg": "/munum-neo/static/media/santiago.dcdf778d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5bfb6d4e.js",
-    "static/js/2.f0f9a4e9.chunk.js",
+    "static/js/2.4ccc459a.chunk.js",
     "static/css/main.f707d842.chunk.css",
-    "static/js/main.a50cb410.chunk.js"
+    "static/js/main.4d73a6af.chunk.js"
   ]
 }

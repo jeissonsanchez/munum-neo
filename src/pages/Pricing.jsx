@@ -7,10 +7,10 @@ import { Grid, Container, Typography, Box, Card, CardMedia, CardContent, CardAct
 
 // Components
 import Navbar from "../components/Navbar";
-import SGAs from "../layouts/SGAs";
+import SGAs from "../committees/SGAs";
 
 // Images
-import onu from "../assets/img/images/onu.jpg";
+import onu from "../assets/img/images/thumbnail/onu.jpg";
 
 const useStyles = makeStyles(theme => ({
   root: {

@@ -11,7 +11,8 @@ const useStyles = makeStyles(theme => ({
     flexFlow: "column nowrap",
     justifyContent: "center",
     alignItems: "center",
-    color: `${props.color}`
+    color: `${props.color}`,
+    margin: 58
   }),
   instruction: {
     margin: 10,

@@ -47,6 +47,9 @@ const useStyles = makeStyles(theme => ({
     }
   },
   "@media (max-width: 960px)": {
+    committeePresentation: {
+      padding: 20
+    },
     headImage: {
       height: "100%"
     }
@@ -60,8 +63,9 @@ export default function CommitteeHead(props) {
 
   return (
     <div className={classes.root}>
-      <Grid container direction="row-reverse">
+      <Grid container direction={props.reverse ? "row-reverse" : null}>
         <Grid item sm={12} md={4} className={classes.committeePresentation}>
+          <div></div>
           <Box>
             <Typography variant="h3" component="h2" align="left">
               {props.title}

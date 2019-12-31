@@ -9,7 +9,11 @@ import { Grid, Container, Typography, Box, Card, CardMedia, CardContent, CardAct
 import { Link } from "react-router-dom";
 
 // Images
-import onu from "../assets/img/images/onu.jpg";
+import onu from "../assets/img/images/thumbnail/onu.jpg";
+import crisis from "../assets/img/images/thumbnail/crisis.jpg";
+import interconexion from "../assets/img/images/thumbnail/interconexion.jpg";
+import colombianos from "../assets/img/images/thumbnail/colombianos.jpg";
+import regionales from "../assets/img/images/thumbnail/regionales.jpg";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,6 +35,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function SGAs() {
   const classes = useStyles();
+  const arrImages = [onu, colombianos, crisis, regionales, interconexion];
+  const arrRoutes = ["onu", "colombianos", "crisis", "regionales", "interconexion"];
 
   return (
     <div className={classes.root}>
@@ -41,12 +47,12 @@ export default function SGAs() {
         <Typography variant="body1">Munum esta dividida en 5 SGAs distribuidos en X comités, Conocelos.</Typography>
         <Box justify="center">
           <Grid container alignItems="center" justify="center">
-            {["Naciones Unidas", "Especializados", "Crisis", "Regionales", "Interconexión"].map(sga => (
+            {["Naciones Unidas", "Col. y Especializados", "Crisis", "Regionales", "Interconexión"].map((sga, index) => (
               <Grid item sm="auto" md={4} key={sga}>
-                <Link to="/committee/onu">
+                <Link to={`/committee/${arrRoutes[index]}`}>
                   <Card className={classes.card}>
                     <CardActionArea>
-                      <CardMedia className={classes.media} image={onu} title="Contemplative Reptile" />
+                      <CardMedia className={classes.media} image={arrImages[index]} title="Contemplative Reptile" />
                       <CardContent>
                         <Typography gutterBottom variant="h6" component="h2" align="center">
                           {sga}

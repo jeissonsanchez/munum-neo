@@ -53,6 +53,7 @@ function App() {
         <div className={classes.layout}>
           <Sidebar></Sidebar>
           <Switch>
+            <Route path="/munum-neo/" exact component={Home} />
             <Route path="/" exact component={Home} />
             <Route path="/committee" component={Committee} />
             <Route path="/pricing" component={Pricing} />

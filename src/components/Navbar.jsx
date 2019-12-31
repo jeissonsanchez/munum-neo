@@ -54,6 +54,7 @@ const mobileStyles = makeStyles(theme => ({
 
 const MenuButton = styled(Button)({
   border: "1px solid transparent",
+  backgroundColor: "rgba(255,255,255,.8)",
   color: "#4A4A4A",
   height: 32,
   width: 150,
@@ -61,8 +62,8 @@ const MenuButton = styled(Button)({
   margin: "0 10px",
   textTransform: "capitalize",
   "&:hover": {
-    background: "rgba(255, 253, 250, 0.4)",
-    borderBottom: "2px solid #FB8C25"
+    background: "rgba(255, 253, 250, 0.4)"
+    // borderBottom: "2px solid #FB8C25"
   }
 });
 
@@ -76,7 +77,7 @@ export default function Navbar() {
     return (
       <AppBar className={webClasses.appBar}>
         <Toolbar className={webClasses.toolbar}>
-          <Link to="/">
+          <Link to="/munum-neo">
             <MenuButton color="primary">MUNUM'20</MenuButton>
           </Link>
           <Link to="/committee">
@@ -86,9 +87,7 @@ export default function Navbar() {
             <MenuButton color="primary">Costos</MenuButton>
           </Link>
           <Link to="/signUp">
-            <MenuButton className={webClasses.signUp} color="primary">
-              Inscribirse
-            </MenuButton>
+            <MenuButton color="primary">Inscribirse</MenuButton>
           </Link>
         </Toolbar>
       </AppBar>
@@ -97,7 +96,7 @@ export default function Navbar() {
     return (
       <div className={mobileClasses.nav}>
         <BottomNavigation showLabels>
-          <BottomNavigationAction label="Munum" icon={<HomeIcon />} component={Link} to="/" />
+          <BottomNavigationAction label="Munum" icon={<HomeIcon />} component={Link} to="/munum-neo" />
           <BottomNavigationAction label="Comités" icon={<AccountBalanceIcon />} component={Link} to="/committee" />
           <BottomNavigationAction label="Costos" icon={<MonetizationOnIcon />} component={Link} to="/pricing" />
           <BottomNavigationAction label="Inscribirse" icon={<ExitToAppIcon />} component={Link} to="/signUp" />
